@@ -49,7 +49,6 @@ public class AuthController {
 				httpSession.setAttribute("LoggedInUser", uname);
 				// System.out.println(uname);
 				model.addAttribute("user", uname);
-				System.out.println("Checking session");
 				return "redirect:/dashboard";
 			} else {
 				model.addAttribute("error", "Invalid username or password");
